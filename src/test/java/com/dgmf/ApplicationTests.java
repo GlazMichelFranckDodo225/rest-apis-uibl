@@ -1,10 +1,10 @@
-package com.dgmf.restapisuibl;
+package com.dgmf;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RestApisUiblApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
