@@ -1,5 +1,6 @@
 package com.dgmf.controller;
 
+import com.dgmf.controller.response.StudentResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,8 +13,10 @@ public class StudentController {
     private String appName;
 
     @GetMapping
-    public String getStudents() {
+    // public String getStudents() {
+    public StudentResponse getStudents() {
         // return "Student List";
-        return appName;
+        // return appName;
+        return new StudentResponse(1, "John", "Doe");
     }
 }
